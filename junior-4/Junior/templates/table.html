@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block body %}
+    <table class="table table-striped table-hover m-4 bg-success">
+        <thead>
+        <tr>
+            <th>Key</th>
+            <th>Value</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for key, value in dictionary.items() %}
+            <tr>
+                <td> {{ key }} </td>
+                <td> {{ value }} </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+        <caption>The contents of the dictionary</caption>
+    </table>
+{% endblock %}

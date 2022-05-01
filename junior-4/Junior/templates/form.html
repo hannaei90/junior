@@ -1,0 +1,86 @@
+{% extends "layout.html" %}
+
+{% block body %}
+    <form action="/add" method="get">
+        <div class="mb-3">
+            <label> KEY: </label><input type="text" name="key">
+        </div>
+        <div class="mb-3">
+            <label> VALUE: </label><input type="text" name="value"><br>
+        </div>
+        <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1" name="add">
+            <label class="form-check-label" for="exampleCheck1">Add to dictionary entry...</label>
+        </div>
+        <input type="submit" value="Submit">
+    </form>
+{% endblock %}
+
+
+<!--
+
+Presentational markup versus semantic markup.
+The divs and spans are for styling and structure.
+
+semantic tags:
+article, aside, details, figcaption, figure, footer, header, main, mark, nav, section, summary, time
+
+
+html
+(comments)
+
+Relevant Head Tags
+
+head
+link
+meta
+script
+title
+
+Relevant Body Tags:
+
+a
+article
+aside
+b
+body
+br
+button
+center
+div
+form
+footer
+header
+h1
+h2
+h3
+i
+img
+input
+label
+li
+nav
+option
+p
+pre
+section
+select
+span
+table
+textarea
+thead
+tr
+th
+tbody
+td
+ul
+
+
+
+div and span are not semantic.
+
+Bootstrap classes:
+
+container
+
+-->
